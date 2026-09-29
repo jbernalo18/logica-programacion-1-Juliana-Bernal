@@ -76,18 +76,3 @@ button.addEventListener("click", function () {
 
 
 
-button.addEventListener("click", function () {
-
-    const value1 = Number(number1.value);
-    const value2 = Number(number2.value);
-    const value3 = Number(number3.value);
-
-    const largest = findLargest(value1, value2, value3);
-    const smallest = findSmallest(value1, value2, value3);
-    const middle = value1 + value2 + value3 - largest - smallest;
-
-    descending.textContent = `${largest}, ${middle}, ${smallest}`;
-    ascending.textContent = `${smallest}, ${middle}, ${largest}`;
-});
-
-
